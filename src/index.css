@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system,
+    "Inter", "Roboto", sans-serif;
+  font-size: 13px;
+  background: #0d1117;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+::selection {
+  background: rgba(76, 194, 255, 0.35);
+}
+
+/* Скроллбары в стиле Windows 11 */
+.win-scroll::-webkit-scrollbar,
+.win-scroll-x::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.win-scroll::-webkit-scrollbar-track,
+.win-scroll-x::-webkit-scrollbar-track {
+  background: transparent;
+}
+.win-scroll::-webkit-scrollbar-thumb,
+.win-scroll-x::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+.win-scroll::-webkit-scrollbar-thumb:hover,
+.win-scroll-x::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+.win-scroll-x {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+}
+.win-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
